@@ -54,25 +54,25 @@ console.log(JSON.stringify([{"abc": 123}], null, 2));
 
 ### sessionStorage CRUD
 ```js
-// storageGet Create
+// storage Create
 sessionStorage.setItem('ss1', 1);
 sessionStorage.setItem('ss2', '이');
 sessionStorage.setItem('ss3', undefined);
 
-// storageGet Read
+// storage Read
 sessionStorage.getItem('ss1');
 const ss1 = sessionStorage.getItem('ss1');
 const ss2 = sessionStorage.getItem('ss2');
 const ss3 = sessionStorage.getItem('ss3');
 
-// storageGet Update
+// storage Update
 sessionStorage.setItem('ss1', [1, 2, 3]);
 sessionStorage.setItem('ss2', {
   key1: 'value1'
 });
 sessionStorage.setItem('ss3', function() {});
 
-// storageGet Delete
+// storage Delete
 sessionStorage.removeItem('ss1');
 sessionStorage.clear();
 ```
